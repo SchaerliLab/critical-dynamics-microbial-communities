@@ -44,6 +44,16 @@ show_trajectory = true;
 
 visualizes the full deterministic trajectory of the system.
 
+### `Pacheco_data_analysis.m`
+
+Processes the experimental time-series data from the synthetic microbial community study of Pacheco *et al.* (Nature Communications, 2026):
+
+https://www.nature.com/articles/s41467-026-73686-w
+
+The script automatically downloads the supplementary dataset (`41467_2026_73686_MOESM8_ESM.xlsx`) if it is not already present in the working directory.
+
+It reproduces the experimental analyses presented in the manuscript.
+
 ---
 
 ## Requirements
