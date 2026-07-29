@@ -79,9 +79,9 @@ y_fit = polyval(p, [lb,ub]);
 plot([lb,ub] + shift, y_fit, 'r:', 'LineWidth', 2);
 
 
-xlabel('\boldmath $\log_{10}(w)$', 'Interpreter', 'latex','FontSize',16);
-ylabel('\boldmath $\log_{10}(P(W > w))$', 'Interpreter', 'latex','FontSize',16);
-set(gca,'LineWidth',1.5,'FontSize',12)
+xlabel('\boldmath $\log_{10}(w)$', 'Interpreter', 'latex','FontSize',18);
+ylabel('\boldmath $\log_{10}(P(W > w))$', 'Interpreter', 'latex','FontSize',18);
+set(gca,'LineWidth',1.5,'FontSize',14)
 
 grid on;
 
@@ -89,9 +89,9 @@ axes('Position',[.28 .3 .45 .45])
 hold on
 plot(t,data)
 xline(t0,'k:','LineWidth',2)
-xlabel('\boldmath \bf Time (h)','FontSize',12,'Interpreter','latex')
-ylabel('\bf Relative area','FontSize',12,'Interpreter','latex')
-set(gca,'LineWidth',1.5,'FontSize',12)
+xlabel('\boldmath \bf Time (h)','FontSize',18,'Interpreter','latex')
+ylabel('\bf Relative area','FontSize',18,'Interpreter','latex')
+set(gca,'LineWidth',1.5,'FontSize',14)
 
 exportgraphics(gcf,'SOC_Pacheco.pdf','Resolution',300,'ContentType','vector')
 
@@ -102,9 +102,9 @@ hold on
 plot(t_osc,data_osc)
 plot(t,mean(data_osc,2,'omitnan'),'k','LineWidth',3)
 xline(t0_osc,'k:','LineWidth',2)
-xlabel('\boldmath \bf Time (h)','FontSize',12,'Interpreter','latex')
-ylabel('\bf Relative area','FontSize',12,'Interpreter','latex')
-set(gca,'LineWidth',1.5,'FontSize',12)
+xlabel('\boldmath \bf Time (h)','FontSize',18,'Interpreter','latex')
+ylabel('\bf Relative area','FontSize',18,'Interpreter','latex')
+set(gca,'LineWidth',1.5,'FontSize',14)
 
 exportgraphics(gcf,'oscillation.pdf','Resolution',300,'ContentType','vector')
 
@@ -147,8 +147,8 @@ plot(t_lag,acf_mean_osc,...
     'Color',[0 0.2 0.8],...
     'LineWidth',2.5)
 
-xlabel('\bf Lag time (h)','Interpreter','latex','FontSize',16)
-ylabel('\bf Autocorrelation','Interpreter','latex','FontSize',16)
+xlabel('\bf Lag time (h)','Interpreter','latex','FontSize',18)
+ylabel('\bf Autocorrelation','Interpreter','latex','FontSize',18)
 
 legend({'Criticality \pm SEM','Criticality',...
         'Oscillation \pm SEM','Oscillation'},...
@@ -156,7 +156,7 @@ legend({'Criticality \pm SEM','Criticality',...
 
 grid on
 box on
-set(gca,'LineWidth',1.5,'FontSize',12)
+set(gca,'LineWidth',1.5,'FontSize',14)
 xlim([0 max(t_lag)])
 
 exportgraphics(gcf,'ACF.pdf','Resolution',300,'ContentType','vector')
